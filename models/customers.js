@@ -16,7 +16,7 @@ const custSchema = new Schema({
     street: String,
     city: String,
     state: String,
-    zip: Number
+    zipcode: Number
   },
   phone_Num: {
     type: Number,
@@ -48,7 +48,7 @@ const custSchema = new Schema({
 custSchema.methods.setFullName = () => {
   this.full_name = `${this.firstName} ${this.lastName}`
 
-  return this.full_name; 
+  return this.full_name;
 };
 const Customers = mongoose.model("Customers", custSchema);
 
