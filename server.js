@@ -2,11 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-var jwt = require('express-jwt');
-var jwks = require('jwks-rsa');
 require('dotenv').config()
 
-const PORT = process.env.PORT || '8080';
+const PORT = process.env.PORT || '3000';
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
